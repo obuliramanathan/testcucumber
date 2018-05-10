@@ -23,6 +23,7 @@ public class mystepdef1 {
 	public mystepdef1 (baseTest base) {
 		driver = base.initializeWebDriver();
 	}
+
 /*
 	@Before(order=1)
 	public void beforeMethod1 () {
@@ -76,6 +77,7 @@ public class mystepdef1 {
 	@And ("^Close the browser$")
 	public void Close_the_browser () {
 		driver.quit();
+		driver = null;
 	}
 	
 	@When ("^User enter login credentials$")
